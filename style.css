@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+  --footer: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  background-image: url(./images/bg-desktop.svg);
+  font-weight: 400;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  background-size: contain;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.section_hero {
+  display: flex;
+  flex-direction: row;
+}
+.rowOne {
+    width: 40%;
+}
+.mockup_svg{
+    width: 100%;
+}
+
+h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.rowTwo {
+    width: 30%;
+    text-align: left;
+}
+.rowOne,
+.rowTwo {
+    margin: 2rem;
+}
+
+p {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.btn {
+    letter-spacing: 2px;
+    text-transform:bold;
+  border-radius: 2em;
+  width: 150px;
+  height: 34px;
+  border: 0px;
+  margin-top: 2rem;
+  font-weight: 400;
+  background-color: white;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: large;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.socials {
+    display: flex;
+    float: right;
+}
+
+.fb {
+    margin: 5px;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+}
+.fb:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+.challenge {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: greenyellow;
+}
+@media (min-width :200px) and (max-width: 450px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .nav_logo {
+        width: 30%;
+    }
+    .nav_logo img {
+        width: 100%;
+    }
+    .section_hero {
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+        position: relative;
+        left: -25px;
+    }
+    .rowOne,
+    .rowTwo {
+        width: 100%;
+    }
+    .rowOne {
+        text-align: center;
+    }
+    .mockup_svg {
+        max-width: 800px;
+    }
+    h2, 
+    p {
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .btn {
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+    }
+    .fb{
+        margin: 5px;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    footer {
+        display: flex;
+        width: 99%;
+    }
+    .challenge {
+        word-wrap: break-word;
+    }
+}
